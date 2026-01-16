@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  consumer:
+    image: rizkiisroi/rabbitmq-consumer:latest
+    container_name: rabbitmq-consumer
+    depends_on:
+      - rabbitmq
+    environment:
+      RABBITMQ_QUEUE: my_queue
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_USER: guest
+      RABBITMQ_PASS: guest
+      LOG_FILE_PATH: /var/log/message-consumed-from-RabbitMQ.log
+      LOG_MAX_SIZE: 256000
+    volumes:
+      - ./logs:/var/log

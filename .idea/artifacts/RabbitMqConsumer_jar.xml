@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RabbitMqConsumer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RabbitMqConsumer_jar</output-path>
+    <root id="archive" name="RabbitMqConsumer.jar">
+      <element id="module-output" name="RabbitMqConsumer" />
+      <element id="module-source" name="RabbitMqConsumer" />
+    </root>
+  </artifact>
+</component>
